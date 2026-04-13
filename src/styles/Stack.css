@@ -1,0 +1,84 @@
+.stack {
+    padding: 8rem 1.5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.stack-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.stack-header {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.stack-title {
+    font-family: 'Clash Grotesk', sans-serif;
+    font-size: clamp(3rem, 10vw, 8rem);
+    font-weight: 700;
+    letter-spacing: -0.05em;
+    margin-bottom: 1rem;
+    line-height: 1;
+}
+
+.stack-status {
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--accent-orange);
+    font-size: 0.875rem;
+}
+
+.stack-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .stack-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .stack-grid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+.stack-card {
+    background: var(--glass);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.stack-card:hover {
+    transform: scale(1.05);
+    border-color: rgba(255, 106, 0, 0.5);
+}
+
+.stack-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.stack-card:hover .stack-icon {
+    transform: scale(1.1);
+}
+
+.stack-name {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    opacity: 0.5;
+}
+
+.invert-icon {
+    filter: invert(1);
+}

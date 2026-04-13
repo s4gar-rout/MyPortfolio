@@ -1,0 +1,54 @@
+.preloader-overlay {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #080808;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.preloader-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.glowing-orb {
+    position: absolute;
+    width: 256px;
+    height: 256px;
+    background: linear-gradient(135deg, #FF4D00, #B22222);
+    border-radius: 50%;
+    filter: blur(40px); /* Base blur */
+    opacity: 0.6;
+    z-index: 1;
+    transform-origin: center;
+}
+
+.percentage-counter {
+    font-family: 'Cabinet Grotesk', sans-serif;
+    font-size: clamp(5rem, 15vw, 12rem);
+    font-weight: 800;
+    color: #ffffff;
+    z-index: 2;
+    line-height: 1;
+    cursor: default;
+    user-select: none;
+}
+
+.status-msg {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.4);
+    letter-spacing: 0.5em;
+    margin-top: 2rem;
+    text-transform: uppercase;
+    z-index: 2;
+}

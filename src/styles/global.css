@@ -1,0 +1,64 @@
+@import url('https://api.fontshare.com/v2/css?f[]=clash-grotesk@700,600,400&f[]=satoshi@900,700,500,400&f[]=jet-brains-mono@400&f[]=cabinet-grotesk@800,700,400&display=swap');
+
+:root {
+    --bg-dark: #070912;
+    --accent-orange: #ff6a00;
+    --accent-glow: rgba(255, 106, 0, 0.4);
+    --glass: rgba(255, 255, 255, 0.03);
+    --text-white: #ffffff;
+    --text-dim: rgba(255, 255, 255, 0.6);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Satoshi', sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-white);
+    overflow-x: hidden;
+    cursor: none;
+}
+
+body.loading {
+    overflow: hidden;
+}
+
+.app-container.loading {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.font-editorial { font-family: 'Clash Grotesk', sans-serif; }
+.font-mono { font-family: 'JetBrains Mono', monospace; }
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: var(--bg-dark);
+}
+::-webkit-scrollbar-thumb {
+    background: #222;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-orange);
+}
+
+a {
+    transition: color 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-family: inherit;
+}

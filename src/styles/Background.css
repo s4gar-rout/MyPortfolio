@@ -1,0 +1,24 @@
+.grain-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://grainy-gradients.vercel.app/noise.svg");
+    opacity: 0.06;
+    pointer-events: none;
+    z-index: 999;
+}
+
+.mesh-gradient {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        radial-gradient(circle at 80% 20%, rgba(255, 106, 0, 0.08) 0%, transparent 40%),
+        radial-gradient(circle at 20% 80%, rgba(255, 106, 0, 0.05) 0%, transparent 40%);
+    pointer-events: none;
+    z-index: 0;
+}
