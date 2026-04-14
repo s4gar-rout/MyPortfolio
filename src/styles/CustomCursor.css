@@ -10,3 +10,9 @@
     transform: translate(-50%, -50%);
     will-change: transform;
 }
+
+@media (max-width: 768px) {
+    .custom-cursor {
+        display: none !important;
+    }
+}

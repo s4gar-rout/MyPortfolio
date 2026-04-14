@@ -138,7 +138,7 @@ const Work = () => {
             </div>
           </div>
         ))}
-        <div className="spacer" style={{ height: '100vh' }}></div>
+        <div className="spacer" style={{ height: '15vh' }}></div>
       </div>
     </section>
   );

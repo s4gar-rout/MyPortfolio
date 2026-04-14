@@ -7,6 +7,11 @@ const CustomCursor = () => {
     const cursorRef = useRef(null);
 
     useGSAP(() => {
+        // Disable tracking on mobile devices for performance
+        if (window.innerWidth <= 768 || window.matchMedia("(pointer: coarse)").matches) {
+            return;
+        }
+
         const cursor = cursorRef.current;
         
         const moveCursor = (e) => {
