@@ -9,21 +9,22 @@ const About = () => {
         <div className="perspective-container">
           <div className="glass-panel">
             <div className="panel-glow"></div>
-            <h3 className="panel-title">// ARCHITECTURE</h3>
+            <h3 className="panel-title">// ABOUT ME</h3>
             <p className="panel-content">
-              I build the logic that powers the pixels, and the art that keeps
-              users engaged.
+              I craft scalable digital experiences that blend clean code with
+              stunning design.
             </p>
             <div className="panel-text">
               <p>
-                My journey began at the intersection of graphic design and hard
-                engineering. Today, I create immersive environments that live in
-                the browser.
+                I’m a MERN Stack Developer passionate about building modern,
+                high-performance web applications. My journey started with
+                curiosity for design and evolved into a deep love for clean
+                architecture and seamless user experiences.
               </p>
               <p>
-                I focus on performance-optimized 3D scenes, clean
-                component-driven React architecture, and real-time state
-                management.
+                I specialize in creating responsive interfaces, optimized
+                backend systems, and smooth interactions using modern tools like
+                React, Node.js, and advanced animation libraries.
               </p>
             </div>
           </div>
@@ -31,23 +32,25 @@ const About = () => {
 
         <div className="about-mindset">
           <div className="mindset-header">
-            <h2>The Mindset</h2>
+            <h2>My Approach</h2>
             <div className="mindset-line"></div>
           </div>
 
           <div className="mindset-cards">
             <div className="mindset-card">
               <Icon icon="lucide:box" className="card-icon" />
-              <h4 className="card-title">Spatial Thinking</h4>
+              <h4 className="card-title">Problem Solving</h4>
               <p className="card-text">
-                Creating depth through 3D layers and camera interactions.
+                Breaking down complex problems into scalable and efficient
+                solutions.
               </p>
             </div>
             <div className="mindset-card">
               <Icon icon="lucide:zap" className="card-icon" />
-              <h4 className="card-title">Performance</h4>
+              <h4 className="card-title">Performance First</h4>
               <p className="card-text">
-                Silky smooth 60FPS experiences optimized for mobile and desktop.
+                Building fast, optimized applications that deliver smooth user
+                experiences.
               </p>
             </div>
           </div>

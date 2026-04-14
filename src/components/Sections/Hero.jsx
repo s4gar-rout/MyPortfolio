@@ -71,11 +71,11 @@ const Hero = () => {
         </div>
         <div className="hero-ctas" ref={ctasRef}>
           <a href="#work" className="btn-primary">
-            Explore Universe
+            Explore My Work
             <Icon icon="lucide:arrow-down" />
           </a>
           <a href="#contact" className="btn-secondary">
-            Start Project
+            Let’s Work Together
           </a>
         </div>
       </div>
