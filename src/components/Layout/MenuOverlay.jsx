@@ -56,7 +56,11 @@ const MenuOverlay = ({ isOpen, onClose, menuAnchor }) => {
   };
 
   return (
-    <div className="menu-overlay" ref={overlayRef} style={{ visibility: "hidden" }}>
+    <div
+      className="menu-overlay"
+      ref={overlayRef}
+      style={{ visibility: "hidden" }}
+    >
       <div className="menu-inner">
         <nav className="menu-nav" ref={linksRef}>
           {navLinks.map((link, i) => (
@@ -74,12 +78,26 @@ const MenuOverlay = ({ isOpen, onClose, menuAnchor }) => {
 
         <div className="menu-footer">
           <div className="menu-socials">
-            <a href="#"><Icon icon="lucide:instagram" /></a>
-            <a href="#"><Icon icon="lucide:linkedin" /></a>
-            <a href="#"><Icon icon="lucide:github" /></a>
+            <a href="https://www.instagram.com/s4gar___">
+              <Icon icon="lucide:instagram" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/s4gar-rout-3b5807251"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Icon icon="lucide:linkedin" />
+            </a>
+            <a
+              href="https://github.com/s4gar-rout"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Icon icon="lucide:github" />
+            </a>
           </div>
           <div className="menu-email">
-            <a href="mailto:hello@example.com">hello@example.com</a>
+            <a href="mailto:[sagarrout599@gmail.com]">sagarrout599@gmail.com</a>
           </div>
         </div>
       </div>

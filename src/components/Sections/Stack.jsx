@@ -53,7 +53,7 @@ const Stack = () => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: section,
-        start: "top top",
+        start: "top 2%",
         end: "+=1200",
         pin: true,
         scrub: 1,

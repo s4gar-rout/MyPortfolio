@@ -16,7 +16,7 @@
 
 .stack-header {
     text-align: center;
-    margin-bottom: 5rem; /* Reduced from 6rem */
+    margin-bottom: 2rem; /* Reduced from 6rem */
     padding: 0 1.5rem;
 }
 
@@ -39,7 +39,7 @@
 .stack-scroll-area {
     display: flex;
     flex-direction: column;
-    gap: 1.8rem; /* Tighter gap between rows */
+    gap: 1rem; /* Tighter gap between rows */
     width: 100%;
     position: relative;
     mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
