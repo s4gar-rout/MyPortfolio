@@ -16,7 +16,7 @@ const projects = [
     id: 1,
     title: 'Neurox AI',
     description: 'An intelligent, dark-themed AI chat application leveraging the MERN stack to provide seamless conversations and dynamic text generation.',
-    image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=2070',
+    image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80&auto=format&fit=crop',
     tags: ['React', 'Node.js', 'Express', 'MongoDB'],
     liveLink: 'https://neurox-ai-two.vercel.app',
   
@@ -112,6 +112,10 @@ const Work = () => {
                 src={project.image}
                 alt={project.title}
                 className="project-image"
+                onError={(e) => {
+                  e.currentTarget.style.opacity = '0.3';
+                  e.currentTarget.style.filter = 'grayscale(1)';
+                }}
               />
            
             </div>

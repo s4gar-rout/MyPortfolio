@@ -109,20 +109,26 @@ const Contact = () => {
 
           <footer className="contact-footer">
             <div className="social-links">
-              <a href="https://github.com/s4gar-rout" className="social-link">
-                GITHUB
+              <a href="https://github.com/s4gar-rout" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="GitHub">
+                <Icon icon="lucide:github" />
               </a>
               <a
                 href="https://www.linkedin.com/in/s4gar-rout-3b5807251"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="social-link"
+                aria-label="LinkedIn"
               >
-                LINKEDIN
+                <Icon icon="lucide:linkedin" />
               </a>
               <a
                 href="https://www.instagram.com/s4gar___"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="social-link"
+                aria-label="Instagram"
               >
-                INSTAGRAM
+                <Icon icon="lucide:instagram" />
               </a>
             </div>
           </footer>

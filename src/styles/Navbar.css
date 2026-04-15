@@ -2,7 +2,7 @@
   position: fixed;
   top: 1.5rem; /* Floating from top */
   width: 100%;
-  z-index: 50;
+  z-index: 100; /* Below menu overlay (200) but above page content */
   display: flex;
   justify-content: center;
   align-items: center;

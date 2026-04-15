@@ -23,6 +23,13 @@ body {
     cursor: none;
 }
 
+/* Restore default cursor on touch/mobile devices */
+@media (pointer: coarse), (max-width: 768px) {
+    body {
+        cursor: auto;
+    }
+}
+
 body.loading {
     overflow: hidden;
 }
