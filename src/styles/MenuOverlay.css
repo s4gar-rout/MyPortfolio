@@ -5,8 +5,9 @@
     height: 100vh;
     height: 100dvh; /* Dynamic viewport height for mobile */
     background: rgba(7, 9, 18, 0.97);
-    backdrop-filter: blur(24px);
     -webkit-backdrop-filter: blur(24px);
+    backdrop-filter: blur(24px);
+    transform: translateZ(0);
     z-index: 200; /* Higher than navbar (50) so it covers everything */
     display: flex;
     align-items: center;
